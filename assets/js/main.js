@@ -220,7 +220,7 @@ function wsConnect() {
                     var array = $.map(ddata, function (value, index) {
                         return [value];
                     });
-                    var TransactionId = (array[0]);
+                    var TransactionId = (array[1]);
                     try {
                         var arr = JSON.parse(sessionStorage.getItem("TransactionId"));
                         arr.push(TransactionId);
